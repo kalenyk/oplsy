@@ -57,9 +57,6 @@ export default class Graph extends React.PureComponent<IProps> {
     constructor(props: IProps) {
         super(props);
         this.graph = new joint.dia.Graph();
-        this.state = {
-            lastPosition: 0
-        };
     }
         
 
@@ -114,7 +111,6 @@ export default class Graph extends React.PureComponent<IProps> {
 
     render() {
         return (
-            <div id="playground" ref="placeholder">
-            </div>);
+            <div id="playground" ref="placeholder"/>);
     }
 }
